@@ -11,6 +11,7 @@
 		DB0507912A2750F000CB39FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0507902A2750F000CB39FF /* ContentView.swift */; };
 		DB0507932A2750F200CB39FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0507922A2750F200CB39FF /* Assets.xcassets */; };
 		DB0507962A2750F200CB39FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0507952A2750F200CB39FF /* Preview Assets.xcassets */; };
+		DB05079F2A275BF300CB39FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05079E2A275BF300CB39FF /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DB0507902A2750F000CB39FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB0507922A2750F200CB39FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB0507952A2750F200CB39FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB05079E2A275BF300CB39FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				DB05078E2A2750F000CB39FF /* ProgressTrackerApp.swift */,
 				DB0507902A2750F000CB39FF /* ContentView.swift */,
+				DB05079E2A275BF300CB39FF /* HomeView.swift */,
 				DB0507922A2750F200CB39FF /* Assets.xcassets */,
 				DB0507942A2750F200CB39FF /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB05079F2A275BF300CB39FF /* HomeView.swift in Sources */,
 				DB0507912A2750F000CB39FF /* ContentView.swift in Sources */,
 				DB05078F2A2750F000CB39FF /* ProgressTrackerApp.swift in Sources */,
 			);
