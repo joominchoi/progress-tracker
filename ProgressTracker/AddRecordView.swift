@@ -14,7 +14,7 @@ struct AddRecordView: View {
     @State private var searchText = ""
     
     @State private var name = ""
-    @State private var result = 10
+    @State private var result: Int?
     @State private var date = Date.now
     @State private var notes = ""
     
@@ -65,13 +65,14 @@ struct AddRecordView: View {
                         let newRecord = Record(context: moc)
                         newRecord.id = UUID()
                         newRecord.name = name
-                        newRecord.result = Int16(result)
+                        newRecord.result = Int16(result!)
                         newRecord.date = date
                         newRecord.notes = notes
                         
                         try? moc.save()
                         dismiss()
                     }
+                    .disabled(result == nil)
                 }
             }
             .navigationTitle("Add record")
