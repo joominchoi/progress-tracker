@@ -11,6 +11,8 @@ struct AddRecordView: View {
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     
+    @State private var searchText = ""
+    
     @State private var name = ""
     @State private var result = 10
     @State private var date = Date.now
@@ -27,7 +29,15 @@ struct AddRecordView: View {
                             Text($0)
                         }
                     }
-                    TextField("Result", value: $result, format: .number)
+                    .pickerStyle(.navigationLink)
+                    
+                    LabeledContent {
+                        TextField("kg", value: $result, format: .number)
+                            .multilineTextAlignment(.trailing)
+                    } label: {
+                        Text("Result")
+                    }
+                    
                     DatePicker("Date completed", selection: $date, displayedComponents: .date)
                 }
                 
