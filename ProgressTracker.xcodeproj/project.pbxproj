@@ -12,6 +12,9 @@
 		DB0507932A2750F200CB39FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0507922A2750F200CB39FF /* Assets.xcassets */; };
 		DB0507962A2750F200CB39FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0507952A2750F200CB39FF /* Preview Assets.xcassets */; };
 		DB05079F2A275BF300CB39FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05079E2A275BF300CB39FF /* HomeView.swift */; };
+		DB0507A12A289B9200CB39FF /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0507A02A289B9200CB39FF /* RecordsView.swift */; };
+		DB0507A42A28AC2200CB39FF /* ProgressTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB0507A22A28AC2200CB39FF /* ProgressTracker.xcdatamodeld */; };
+		DB0507A62A28AC5900CB39FF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0507A52A28AC5900CB39FF /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		DB0507922A2750F200CB39FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB0507952A2750F200CB39FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB05079E2A275BF300CB39FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DB0507A02A289B9200CB39FF /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
+		DB0507A32A28AC2200CB39FF /* ProgressTrackerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProgressTrackerModel.xcdatamodel; sourceTree = "<group>"; };
+		DB0507A52A28AC5900CB39FF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 				DB05078E2A2750F000CB39FF /* ProgressTrackerApp.swift */,
 				DB0507902A2750F000CB39FF /* ContentView.swift */,
 				DB05079E2A275BF300CB39FF /* HomeView.swift */,
+				DB0507A02A289B9200CB39FF /* RecordsView.swift */,
+				DB0507A22A28AC2200CB39FF /* ProgressTracker.xcdatamodeld */,
+				DB0507A52A28AC5900CB39FF /* DataController.swift */,
 				DB0507922A2750F200CB39FF /* Assets.xcassets */,
 				DB0507942A2750F200CB39FF /* Preview Content */,
 			);
@@ -141,6 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB05079F2A275BF300CB39FF /* HomeView.swift in Sources */,
+				DB0507A62A28AC5900CB39FF /* DataController.swift in Sources */,
+				DB0507A12A289B9200CB39FF /* RecordsView.swift in Sources */,
+				DB0507A42A28AC2200CB39FF /* ProgressTracker.xcdatamodeld in Sources */,
 				DB0507912A2750F000CB39FF /* ContentView.swift in Sources */,
 				DB05078F2A2750F000CB39FF /* ProgressTrackerApp.swift in Sources */,
 			);
@@ -343,6 +355,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB0507A22A28AC2200CB39FF /* ProgressTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB0507A32A28AC2200CB39FF /* ProgressTrackerModel.xcdatamodel */,
+			);
+			currentVersion = DB0507A32A28AC2200CB39FF /* ProgressTrackerModel.xcdatamodel */;
+			path = ProgressTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DB0507832A2750F000CB39FF /* Project object */;
 }

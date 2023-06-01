@@ -1,41 +1,42 @@
 //
-//  HomeView.swift
+//  RecordsView.swift
 //  ProgressTracker
 //
-//  Created by JooMin Choi on 31/05/2023.
+//  Created by JooMin Choi on 01/06/2023.
 //
 
 import SwiftUI
 
-struct HomeView: View {
+struct RecordsView: View {
     var body: some View {
         NavigationView {
             VStack {
                 VStack {
-                    Text("Message of the day")
+                    Text("Searchbar: to filter through items")
                         .fontWeight(.bold)
                         .frame(
                             maxWidth: .infinity,
                             alignment: .leading
                         )
-                    Text("Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...")
+                    Text("List of exercises / movements\nName of exercise - PB: Clickable to expand into list of all entries and date")
                         .frame(
                             maxWidth: .infinity,
                             alignment: .leading
                         )
 
                 }
-                .navigationTitle("Dashboard")
+                .navigationTitle("Records")
                 .navigationBarTitleDisplayMode(.inline)
                 .padding()
                 Spacer()
             }
         }
     }
+    
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct RecordsView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        RecordsView()
     }
 }

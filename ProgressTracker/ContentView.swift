@@ -14,7 +14,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            Text("Tab 2")
+            RecordsView()
+                .tabItem {
+                    Label("Records", systemImage: "dumbbell")
+                }
+            Text("Tab 3")
                 .tabItem {
                     Label("More", systemImage: "ellipsis")
                 }
