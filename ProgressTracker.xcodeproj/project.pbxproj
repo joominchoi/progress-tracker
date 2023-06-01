@@ -15,6 +15,7 @@
 		DB0507A12A289B9200CB39FF /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0507A02A289B9200CB39FF /* RecordsView.swift */; };
 		DB0507A42A28AC2200CB39FF /* ProgressTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB0507A22A28AC2200CB39FF /* ProgressTracker.xcdatamodeld */; };
 		DB0507A62A28AC5900CB39FF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0507A52A28AC5900CB39FF /* DataController.swift */; };
+		DB0507A82A28AF8100CB39FF /* AddRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0507A72A28AF8100CB39FF /* AddRecordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DB0507A02A289B9200CB39FF /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
 		DB0507A32A28AC2200CB39FF /* ProgressTrackerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProgressTrackerModel.xcdatamodel; sourceTree = "<group>"; };
 		DB0507A52A28AC5900CB39FF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		DB0507A72A28AF8100CB39FF /* AddRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				DB05079E2A275BF300CB39FF /* HomeView.swift */,
 				DB0507A02A289B9200CB39FF /* RecordsView.swift */,
 				DB0507A22A28AC2200CB39FF /* ProgressTracker.xcdatamodeld */,
+				DB0507A72A28AF8100CB39FF /* AddRecordView.swift */,
 				DB0507A52A28AC5900CB39FF /* DataController.swift */,
 				DB0507922A2750F200CB39FF /* Assets.xcassets */,
 				DB0507942A2750F200CB39FF /* Preview Content */,
@@ -154,6 +157,7 @@
 				DB0507A12A289B9200CB39FF /* RecordsView.swift in Sources */,
 				DB0507A42A28AC2200CB39FF /* ProgressTracker.xcdatamodeld in Sources */,
 				DB0507912A2750F000CB39FF /* ContentView.swift in Sources */,
+				DB0507A82A28AF8100CB39FF /* AddRecordView.swift in Sources */,
 				DB05078F2A2750F000CB39FF /* ProgressTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

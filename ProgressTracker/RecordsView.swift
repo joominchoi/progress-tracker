@@ -8,31 +8,31 @@
 import SwiftUI
 
 struct RecordsView: View {
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var records: FetchedResults<Record>
+    
+    @State private var showingAddScreen = false
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                VStack {
-                    Text("Searchbar: to filter through items")
-                        .fontWeight(.bold)
-                        .frame(
-                            maxWidth: .infinity,
-                            alignment: .leading
-                        )
-                    Text("List of exercises / movements\nName of exercise - PB: Clickable to expand into list of all entries and date")
-                        .frame(
-                            maxWidth: .infinity,
-                            alignment: .leading
-                        )
-
-                }
+        NavigationView{
+            Text("Count: \(records.count)")
                 .navigationTitle("Records")
                 .navigationBarTitleDisplayMode(.inline)
-                .padding()
-                Spacer()
-            }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            showingAddScreen.toggle()
+                        } label: {
+                            Label("Add Record", systemImage: "plus")
+                        }
+                    }
+                }
+                .sheet(isPresented: $showingAddScreen) {
+                    AddRecordView()
+                }
+            
         }
     }
-    
 }
 
 struct RecordsView_Previews: PreviewProvider {
